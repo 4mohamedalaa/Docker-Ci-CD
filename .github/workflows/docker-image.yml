@@ -28,7 +28,3 @@ jobs:
         run: |
           docker build . --file Dockerfile --tag ghcr.io/${{ github.repository_owner }}/docker-image-ci:$(date +%s)
           docker push ghcr.io/${{ github.repository_owner }}/docker-image-ci:$(date +%s)
-In this updated version:
-
-The workflow is triggered on both push and pull request events in the main branch.
-The Dock
